@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*공통 속성*/
+
+body {
+    padding: 50px;
+}
+
+div {
+    width: 150px;
+}
+
+h1 {
+    padding-left: 15px;
+    line-height: 120%;
+}
+
+ul {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 3px;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+
+/*categoryBox*/
+
+#categoryBox {
+    margin-bottom: 50px;
+    border: solid 5px teal;
+}
+
+#categoryBox>h1 {
+    padding-left: 15px;
+    border-bottom: 1px solid silver;
+}
+
+#categoryBox>ul.cookMenu {}
+
+#categoryBox>ul.cookMenu>li {
+    line-height: 200%;
+}
+
+#categoryBox>ul.cookMenu>li:nth-child(1) {
+    font-weight: bold;
+    color: black;
+}
+
+
+/*bbsBox*/
+
+#bbsBox {
+    border: solid 5px red;
+}
+
+#bbsBox>h1 {
+    padding-left: 15px;
+}
+
+#bbsBox>ul.bbsMenu>li {
+    line-height: 200%;
+}
+
+#bbsBox>ul.bbsMenu>li>a {
+    color: white;
+}
+
+#bbsBox>ul.bbsMenu>li>a[title="자유게시판"] {
+    background-color: red;
+}
+
+#bbsBox>ul.bbsMenu>li>a[title="회원장터"] {
+    background-color: teal;
+}
+
+#bbsBox>ul.bbsMenu>li>a[title$="레시피"] {
+    background-color: slateblue;
+}
