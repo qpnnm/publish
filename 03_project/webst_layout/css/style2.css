@@ -1,0 +1,53 @@
+@charset "UTF-8";
+#wrap {
+    margin: 0 auto;
+    width: 1000px;
+    height: 900px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: burlywood;
+    font-size: 30px;
+}
+
+#header {
+    height: 100px;
+    line-height: 100px;
+    background-color: lavenderblush;
+}
+
+#nav {
+    height: 100px;
+    line-height: 100px;
+    background-color: blanchedalmond;
+}
+
+#sideLeft {
+    width: 300px;
+    height: 700px;
+    background-color: lightsalmon;
+    line-height: 700px;
+    float: left;
+}
+
+#sideRight {
+    width: 300px;
+    height: 700px;
+    background-color: darksalmon;
+    line-height: 700px;
+    float: left;
+}
+
+#contents {
+    width: 400px;
+    height: 700px;
+    background-color: lightyellow;
+    float: left;
+    line-height: 700px;
+}
+
+#footer {
+    clear: both;
+    height: 100px;
+    line-height: 100px;
+    background-color: wheat;
+}

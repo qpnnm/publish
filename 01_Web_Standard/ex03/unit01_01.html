@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<title> 이미지와 수평선 삽입하기 </title>
+	<meta charset="UTF-8" />
+	<style>
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			margin: 20px auto;
+			text-align: center;
+			width: 500px;
+			background-color: red;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		img {
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			display: block;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<!-- img 태그같은 inline 요소들을 block 요소로 감싼다면 text-align center가 아니라 margin 0 auto값을 준다 -->
+
+<body>
+	<h1>img 요소로 이미지 삽입하기</h1>
+	<!-- 수평선을 삽입한다. -->
+	<hr>
+	<h2>자동차 박람회 갤러리</h2>
+	<div>
+		<!-- 같은 폴더, images 폴더, images/car 폴더의 이미지를 삽입한다.-->
+
+		<img src="car0.jpg" alt="Car Gallery's White car image" title="흰색 자동차">
+		<img src="images/car1.jpg" alt="Car Gallery's red car image" title="빨간색 자동차">
+		<img src="images/car/car2.jpg" alt="Car Gallery's skyblue car image" title="하늘색 자동차 정면">
+	</div>
+</body>
+
+</html>

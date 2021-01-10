@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <title>checkbox디자인</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        ul,
+        li {
+            list-style: none
+        }
+        
+        .agree {
+            margin-top: 100px;
+        }
+        
+        .agree ul li {
+            margin-bottom: 15px;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .agree ul li:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .agree ul li input[type="checkbox"] {
+            display: none;
+        }
+        
+        .agree ul li input[type="checkbox"]+label {
+            width: 17px;
+            height: 17px;
+            background-color: burlywood;
+            float: left;
+            border-radius: 3px;
+            cursor: pointer;
+            float: left;
+        }
+        
+        .agree ul li input[type="checkbox"]:checked+label {
+            background: burlywood url(check.png) no-repeat center center;
+        }
+        
+        .agree ul li input[type="checkbox"]+label span {
+            position: absolute;
+            float: left;
+            left: 50px;
+            top: 27px;
+        }
+        
+        #al {
+            border: 1px solid #ffffff;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="agree">
+        <ul>
+            <li><input type="checkbox" value="" id="a2" name="전체동의" checked>
+                <label for="a2"><span>이용약관동의(필수)</span></label>
+            </li>
+            <li><input type="checkbox" value="" id="a3" name="전체동의">
+                <label for="a3"><span>개인정보수집 이용동의(필수)</span></label>
+            </li>
+            <li><input type="checkbox" value="" id="a4" name="전체동의">
+                <label for="a4"><span>14세 이상 확인(필수)</span></label>
+            </li>
+        </ul>
+        <p>
+            <input type="checkbox" id="a1" style="zoom:3">
+            <label for="a1">체크박스 크기 조절</label>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
