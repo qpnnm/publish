@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ball {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: violet;
+            border-radius: 50% 50%;
+            animation-name: ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes ani {
+            from {
+                left: 0;
+            }
+            to {
+                left: 900px;
+            }
+        }
+        
+        #ball1 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: violet;
+            border-radius: 50% 50%;
+            animation-name: ani1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes ani1 {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: 900px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="ball"></div>
+    <div id="ball1"></div>
+</body>
+
+</html>
