@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: aquamarine;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; 가운데 정렬*/
+    /*justify-content: space-around; 양 쪽 비율을 줌 */
+    /* justify-content: space-between; 양 옆에 여백 없이 붙여줌*/
+    /* justify-content: space-evenly;  똑같은 간격*/
+    /* justify-content: flex-start;  default left */
+    /* justify-content: flex-end; default right*/
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+}
+
+.item1 {
+    background: bisque;
+}
+
+.item2 {
+    background: blue;
+}
+
+.item3 {
+    background: brown;
+}
+
+.item4 {
+    background: burlywood;
+}
+
+.item5 {
+    background: cornsilk;
+}
+
+.item6 {
+    background: cyan;
+}
+
+.item7 {
+    background: darkkhaki;
+}
+
+.item8 {
+    background: darkslateblue;
+}
+
+.item9 {
+    background: dimgray;
+}
+
+.item10 {
+    background: dodgerblue;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="articleView">
+
+        <div>글1</div>
+        <div>글2</div>
+        <div>글3</div>
+        <div>글4</div>
+        <div>글5</div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(document).scroll(function() {
+                var maxHeight = $(document).height();
+                var currentScroll = $(window).scrollTop() + $(window).height();
+
+
+                if (maxHeight <= currentScroll + 100) {
+                    $.ajax({
+                        url: 'file:///D:ChaBaekSong/youtube/index.html',
+                        success: function(html, status) {
+                            html = '';
+                            for (var i = 6; i < 100; i++) {
+                                html += '<div>' + '글' + i + '</div>';
+                            }
+                            $('.articleView').html(html);
+
+                        }
+                    })
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -1,49 +1,119 @@
 <!DOCTYPE HTML>
 <html lang="ko">
-	<head>
-		<title> 투명도를 이용한 롤오버 이미지 만들기 </title>
-		<meta charset="UTF-8" />
-		<style type="text/css">
-			body {
-				font:0.95em Arial,sans-serif;
-				margin:50px 0px;
-				}
-			
-			
-		</style>
-	</head>
 
-	<body>
-		<header>
-			<h1>C/S/S/   s/h/o/e/s -  s/h/o/p</h1>
-		</header>
-		<nav>
-			<ul id="gallery">
-				<li href="#">
-					<a>
-						<img src="images/bag_hotpink.png" alt="hotPink" />
-						<span class="color">
+<head>
+    <title> 투명도를 이용한 롤오버 이미지 만들기 </title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font: 0.95em Arial, sans-serif;
+            margin: 50px 0px;
+        }
+        
+        header h1 {
+            text-align: center;
+            text-shadow: 0 0 5px #666;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 3em;
+        }
+        
+        nav {
+            width: 330px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        nav ul#gallery {
+            list-style: none;
+        }
+        
+        nav ul#gallery li {
+            width: 100px;
+            height: 100px;
+            float: left;
+            border: 2px solid gray;
+            margin-left: 5px;
+            overflow: hidden;
+        }
+        
+        nav ul#gallery li a {
+            display: block;
+            position: relative;
+        }
+        
+        nav ul#gallery li a:hover img {
+            opacity: 1;
+        }
+        
+        nav ul#gallery li a img {
+            width: 100%;
+            opacity: 0.3;
+            cursor: pointer;
+            height: 100%;
+        }
+        
+        nav ul#gallery li a:hover span.color {
+            visibility: visible;
+        }
+        
+        nav ul#gallery li a span.color {
+            display: block;
+            position: absolute;
+            width: 90px;
+            padding: 5px;
+            top: 0;
+            left: 0;
+            background: #666;
+            text-align: center;
+            color: white;
+            opacity: 0.5;
+            visibility: hidden;
+        }
+        
+        nav ul#gallery li a span.color strong {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>C/S/S/ s/h/o/e/s - s/h/o/p</h1>
+    </header>
+    <nav>
+        <ul id="gallery">
+            <li href="#">
+                <a>
+                    <img src="images/bag_hotpink.png" alt="hotPink" />
+                    <span class="color">
 							<strong>Hot Pink</strong>
 						</span>
-					</a>
-				</li> 
-				<li href="#">
-					<a>
-						<img src="images/bag_navy.png" alt="Navy" />
-						<span class="color">
+                </a>
+            </li>
+            <li href="#">
+                <a>
+                    <img src="images/bag_navy.png" alt="Navy" />
+                    <span class="color">
 							<strong>Navy</strong>
 						</span>
-					</a>
-				</li>
-				<li href="#">
-					<a>
-						<img src="images/bag_white.png" alt="white" />
-						<span class="color">
+                </a>
+            </li>
+            <li href="#">
+                <a>
+                    <img src="images/bag_white.png" alt="white" />
+                    <span class="color">
 							<strong>White</strong>
 						</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</body>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
 </html>

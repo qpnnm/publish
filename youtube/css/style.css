@@ -1,0 +1,303 @@
+:root {
+    --white-color: #fff;
+    --black-color: #111;
+    --blue-color: #00a3d9;
+    --red-color: #b3002d;
+    --gray-dark-color: #777;
+    --gray-medium-color: #9b9b8c;
+    --gray-light-color: #dfdfd0;
+    --padding: 12px;
+    --avatar-padding: 36px;
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  -------header  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background: var(--black-color);
+    color: var(--white-color);
+    border-bottom: 1px solid var(--gray-dark-color);
+}
+
+header .logo {
+    font-size: var(--font-large);
+}
+
+header .logo .fa-youtube {
+    color: var(--red-color);
+}
+
+header .icon .fa-search {
+    margin-right: var(--padding);
+}
+
+
+/* player----------------- */
+
+.player {
+    text-align: center;
+    position: sticky;
+    background: var(--black-color);
+    top: 0;
+}
+
+.player video {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+
+
+/* body----------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ul--------- */
+
+ul {
+    list-style: none;
+}
+
+
+/* button ---------- */
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+}
+
+.infoAndUpNext {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.info {
+    padding: var(--padding);
+}
+
+.info .metadata {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .metadata .hashtags {
+    display: flex;
+    color: var(--blue-color);
+    font-size: var(--font-small);
+}
+
+.info .metadata .hashtags li {
+    margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton {
+    display: flex;
+}
+
+.info .metadata .titleAndButton .title {
+    font-size: var(--font-medium);
+    margin-right: var(--padding);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.info .metadata .titleAndButton .addTitle {
+    font-size: var(--font-medium);
+    margin-right: var(--padding);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.info .metadata .titleAndButton .moreBtn {
+    height: 100%;
+    transition: ease-in-out 300ms transform;
+}
+
+.info .metadata .titleAndButton .moreBtn.clicked {
+    transform: rotate(180deg);
+}
+
+.info .metadata .view {
+    font-size: var(--font-small);
+    color: var(--gray-dark-color);
+}
+
+.info .actions {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+
+.info .actions li {}
+
+.info .actions li button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--gray-dark-color);
+}
+
+.info .actions li button {}
+
+.info .actions li button .clicked {
+    background-color: var(--blue-color);
+}
+
+.info .actions li button .fa-thumbs-up,
+.info .actions li button .fa-thumbs-down,
+.info .actions li button .fa-share,
+.info .actions li button .fa-save,
+.info .actions li button .fa-flag {
+    font-size: 24px;
+    margin-bottom: calc(var(--padding/2));
+}
+
+.info .actions li button i {}
+
+.info .channel {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: var(--padding) 0;
+}
+
+.info .channel .metadata {
+    display: flex;
+    flex-direction: row;
+}
+
+.info .channel .metadata img {
+    width: var(--avatar-padding);
+    height: var(--avatar-padding);
+    border-radius: 50%;
+    margin-right: var(--padding);
+}
+
+.info .channel .metadata .info1 {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+}
+
+.info .channel .metadata .info1 .name {
+    font-size: var(--font-medium);
+}
+
+.info .channel .metadata .info1 .subs {
+    color: var(--gray-dark-color);
+}
+
+.info .channel .subscribe {
+    background-color: crimson;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+
+.upNext {
+    padding: 0 var(--padding);
+}
+
+.upNext .title {
+    font-size: var(--font-medium);
+    color: var(--gray-dark-color);
+    margin-bottom: calc(var(--padding)/2);
+    display: block;
+}
+
+.upNext ul .item {
+    display: flex;
+    margin-top: var(--padding);
+}
+
+.upNext ul .item .img {
+    flex: 1 1 35%;
+    margin-right: var(--padding);
+}
+
+.upNext ul .item .img img {
+    width: 100%;
+}
+
+.upNext ul .item .infos {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upNext ul .item .infos .infoTitle {
+    font-size: var(--font-small);
+}
+
+.upNext ul .item .infos .infoName {
+    font-size: var(--font-medium);
+    color: var(--gray-dark-color);
+}
+
+.upNext ul .item .infos .infoViews {
+    font-size: var(--font-medium);
+    color: var(--gray-dark-color);
+}
+
+.upNext ul .item .moreBtn {
+    flex: 1 1 5%;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    padding: var(--padding);
+    background-color: var(--white-color);
+}
+
+footer .footerWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+footer .footerWrap .ripple {
+    font-weight: bold;
+}
+
+footer .footerWrap .moreBtn {}
+
+@media screen and (min-width:768px) {
+    .infoAndUpNext {
+        flex-direction: row;
+        margin: var(--padding) 0 100px 0;
+    }
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: aquamarine;
+    height: 100vh;
+    display: flex;
+    padding-top: 100px;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+}
+
+.item1 {
+    background: bisque;
+    order: 1;
+    flex-basis: 50%;
+    /* 비율 */
+}
+
+.item2 {
+    /* flex-grow: 0;확대비율 기본값 */
+    order: 2;
+    background: blue;
+}
+
+.item3 {
+    /* flex-shrink: 1;축소비율 기본값1 0은 그 부분만  원래 크기*/
+    order: 3;
+    background: brown;
+}

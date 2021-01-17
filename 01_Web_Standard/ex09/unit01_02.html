@@ -1,43 +1,85 @@
 <!DOCTYPE HTML>
 <html lang="ko">
-	<head>
-		<title> 그라데이션 메뉴바 만들기 </title>
-		<meta charset="UTF-8" />
-		<style type="text/css">
-			body {
-				font:0.95em Arial,sans-serif;
-				margin:50px 0px;
-				}
-			h1 {
-				text-shadow:0px 0px 5px #666;
-				text-align:center;
-				font-size:3em;
-				letter-spacing:5px;
-				color:#d81b21;
-				text-transform:uppercase;
-				}
-			/* Gradient Menu Bar */
 
-		
-		</style>
-	</head>
+<head>
+    <title> 그라데이션 메뉴바 만들기 </title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        body {
+            font: 0.95em Arial, sans-serif;
+            margin: 50px 0px;
+        }
+        
+        h1 {
+            text-shadow: 0px 0px 5px #666;
+            text-align: center;
+            font-size: 3em;
+            letter-spacing: 5px;
+            color: teal;
+            text-transform: uppercase;
+        }
+        /* Gradient Menu Bar */
+        
+        nav {
+            background: skyblue;
+            background: -webkit-linear-gradient(top, gray, aquamarine);
+            background: -o-linear-gradient(top, gray, aquamarine);
+            background: -moz-linear-gradient(top, gray, aquamarine);
+            background: -linear-gradient(top, gray, aquamarine);
+            height: 50px;
+        }
+        
+        #topNav {
+            width: 800px;
+            height: 100%;
+            list-style: none;
+            margin: 0 auto;
+        }
+        
+        #topNav li {
+            float: left;
+        }
+        
+        #topNav li a {
+            text-decoration: none;
+            display: block;
+            padding: 12px 10px 10px;
+            color: wheat;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        
+        #topNav li a:after {
+            content: '/';
+        }
+        
+        #topNav li a:hover {
+            background: gray;
+            background: -webkit-linear-gradient(top, gray, white);
+            background: -moz-linear-gradient(top, gray, white);
+            background: -o-linear-gradient(top, gray, white);
+            background: -linear-gradient(top, gray, white);
+        }
+    </style>
+</head>
 
-	<body>
-		<header>
-			<h1>C/S/S/   s/h/o/e/s -  s/h/o/p</h1>
-		</header>
-		<nav>
-				<ul id="topNav">
-					<li><a href="">best 50</a></li> 
-					<li><a href="">high heel</a></li>  
-					<li><a href="">casual</a></li> 
-					<li><a href="">flat</a></li> 
-					<li><a href="">boots</a></li> 
-					<li><a href="">sandal</a></li> 
-					<li><a href="">bag</a></li> 
-					<li><a href="">acc</a></li> 
-					<li><a href="">sale</a></li> 
-				</ul>
-		</nav>
-	</body>
+<body>
+    <header>
+        <h1>C/S/S/ s/h/o/e/s - s/h/o/p</h1>
+    </header>
+    <nav>
+        <ul id="topNav">
+            <li><a href="">best 50</a></li>
+            <li><a href="">high heel</a></li>
+            <li><a href="">casual</a></li>
+            <li><a href="">flat</a></li>
+            <li><a href="">boots</a></li>
+            <li><a href="">sandal</a></li>
+            <li><a href="">bag</a></li>
+            <li><a href="">acc</a></li>
+            <li><a href="">sale</a></li>
+        </ul>
+    </nav>
+</body>
+
 </html>
