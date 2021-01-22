@@ -1,20 +1,57 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title> 그라데이션 상자와 회원 가입 버튼 만들기 </title>
-		<meta charset="UTF-8">
-		<style type="text/css">
-			body, button { 
-				font-family: "맑은 고딕", 돋움, sans-serif; 
-				}
-			
-		</style>
-	</head>
 
-	<body>
-		<div id="memberBox">
-			<p>아직 infoPub 회원이 아니세요? </p>
-			<button class="btnOrange">회원 가입 하기</button>
-		</div>
-	</body>
+<head>
+    <title> 그라데이션 상자와 회원 가입 버튼 만들기 </title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body,
+        button {
+            font-family: "맑은 고딕", 돋움, sans-serif;
+        }
+        
+        #memberBox {
+            width: 400px;
+            padding: 20px;
+            margin: 50px auto;
+            border: 1px solid #b7b7b7;
+            text-align: center;
+            background: #fff;
+            background: -webkit-linear-gradient(top, #fff000, white 30%, aquamarine);
+            background: -moz-linear-gradient(top, #fff000, white 30%, aquamarine);
+            background: -o-linear-gradient(top, #fff000, white 30%, aquamarine);
+            background: linear-gradient(top, #fff000, white 30%, aquamarine);
+        }
+        
+        .btnOrange {
+            cursor: pointer;
+            text-align: center;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background: #00a3d9;
+            background: -webkit-radial-gradient(circle, aquamarine, white, blue);
+            background: -o-radial-gradient(circle, aquamarine, white, blue);
+            background: -moz-radial-gradient(circle, aquamarine, white, blue);
+            background: -radial-gradient(circle, aquamarine, white, blue);
+        }
+        
+        .btnOrange:hover {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(129, 8, 92, 1) 20%, rgba(8, 117, 130, 1) 57%, rgba(8, 30, 135, 1) 75%, rgba(0, 212, 255, 1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="memberBox">
+        <p>아직 infoPub 회원이 아니세요? </p>
+        <button class="btnOrange" onclick="signIn()">회원 가입 하기</button>
+    </div>
+    <script>
+        function signIn() {}
+    </script>
+</body>
+
 </html>
