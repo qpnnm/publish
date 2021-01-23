@@ -1,10 +1,11 @@
 #wrapper {
-    width: 752px;
+    width: 378px;
+    margin: 0 auto;
 }
 
 li {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     padding: 10px;
     border-radius: 20px;
     margin: 0 8px 8px 0;
@@ -13,27 +14,27 @@ li {
 }
 
 #wrapper #mainNav li:nth-child(2) {
-    background: url(../ex09/images/sandal.png) no-repeat;
+    background: url(../ex09/images/sandal2.png) no-repeat;
 }
 
 #wrapper #mainNav li:nth-child(3) {
-    background: url(../ex09/images/neck.png) no-repeat;
+    background: url(../ex09/images/neck2.png) no-repeat;
 }
 
 #wrapper #mainNav li:nth-child(4) {
-    background: url(../ex09/images/bag.png) no-repeat;
+    background: url(../ex09/images/bag2.png) no-repeat;
 }
 
 #wrapper #mainNav li:nth-child(5) {
-    background: url(../ex09/images/dress.png) no-repeat;
+    background: url(../ex09/images/dress2.png) no-repeat;
 }
 
 #wrapper #mainNav li:nth-child(6) {
-    background: url(../ex09/images/bottom.png) no-repeat;
+    background: url(../ex09/images/bottom2.png) no-repeat;
 }
 
 #wrapper #mainNav li a {
     position: relative;
-    top: 54px;
-    font-size: 2em;
+    top: 38px;
+    font-size: 1.4em;
 }

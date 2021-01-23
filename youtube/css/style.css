@@ -168,8 +168,8 @@ button:focus {
 
 .info .actions li button {}
 
-.info .actions li button .clicked {
-    background-color: var(--blue-color);
+.info .actions li button.clicked .fa-thumbs-up {
+    color: var(--blue-color);
 }
 
 .info .actions li button .fa-thumbs-up,

@@ -1,21 +1,75 @@
 <!DOCTYPE HTML>
 <html lang="ko">
-	<head>
-		<title>이미지 배치하고 롤오버시 블러 효과 적용하기</title>
-		<meta charset="UTF-8">
-		<style type="text/css">
 
-		</style>
-	</head>
+<head>
+    <title>이미지 배치하고 롤오버시 블러 효과 적용하기</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font: 1.2em verdana, sans-serif;
+            margin-top: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            text-shadow: 1px 1px 10px black;
+            color: white;
+            font-style: italic;
+            font-size: 2em;
+            padding-bottom: 20px;
+        }
+        
+        #bookList {
+            background: url(images/book_bg.png) no-repeat;
+            width: 498px;
+            height: 246px;
+            margin: 0 auto;
+            border: 5px solid #dbdbdb;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #666;
+        }
+        
+        #bookList ul {
+            float: left;
+            margin-top: 25px;
+            margin-left: 22px;
+            list-style: none;
+        }
+        
+        #bookList ul li {
+            text-align: center;
+            float: left;
+        }
+        
+        #bookList ul li a,
+        #bookList ul li a img {
+            display: block;
+        }
+        
+        #bookList ul li a:hover img {
+            box-shadow: 0 0 50px greenyellow;
+        }
+        
+        #bookList ul li a img.frame {
+            margin-right: 63px;
+        }
+    </style>
+</head>
 
-	<body>
-		<h1>New Book</h1>
-		<div id="bookList">
-			<ul>
-				<li><a href="#"><span><img src="images/book1.png" width="107" height="156" alt="book1" class="frame"/><span class="hit"></span></span></a></li>
-				<li><a href="#"><span><img src="images/book2.png" width="107" height="156" alt="book2" class="frame"/><span class="hit"></span></span></a></li>
-				<li><a href="#"><span><img src="images/book3.png" width="107" height="156" alt="book3" /><span class="hit"></span></span></a></li>
-			</ul>
-		</div>
-	</body>
+<body>
+    <h1>New Book</h1>
+    <div id="bookList">
+        <ul>
+            <li><a href="#"><span><img src="images/book1.png" width="107" height="156" alt="book1" class="frame"/><span class="hit"></span></span></a></li>
+            <li><a href="#"><span><img src="images/book2.png" width="107" height="156" alt="book2" class="frame"/><span class="hit"></span></span></a></li>
+            <li><a href="#"><span><img src="images/book3.png" width="107" height="156" alt="book3" /><span class="hit"></span></span></a></li>
+        </ul>
+    </div>
+</body>
+
 </html>

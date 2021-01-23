@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+    <title>미디어쿼리</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: cornflowerblue;
+            margin: 0 auto;
+            text-align: center;
+        }
+        /* 화면 너비가 0~1280까지를 얘기하는 것. pc버전 */
+        
+        @media screen and (max-width: 1280px) {
+            body {
+                background-color: coral;
+            }
+        }
+        /* 화면 너비가 0~1024까지를 얘기하는 것. pc버전 */
+        
+        @media screen and (max-width: 1024px) {
+            body {
+                background-color: cornsilk;
+            }
+        }
+        /* 화면 너비가 0~960까지를 얘기하는 것. 노트북 */
+        
+        @media screen and (max-width: 960px) {
+            body {
+                background-color: darkmagenta;
+            }
+        }
+        /* 화면 너비가 0~768px 얘기하는 것. 태브릿 */
+        
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: darkseagreen;
+            }
+        }
+        /* 화면 너비가 0~576px 얘기하는 것. 모바일 */
+        
+        @media screen and (max-width: 576px) {
+            body {
+                background-color: deeppink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>미디어쿼리</h1>
+    <p>미디어 쿼리는 화면 크기에 따른 각각의 속성 값의 지정하여, 여러가지 화면을 구성하는 기술</p>
+    <p>@media only scrren and (조건문){실행문}</p>
+    <ul>
+        <li>@Media: 미디어 쿼리가 시작됨을 표시</li>
+        <li>only: 미디어 쿼리 구문을 해석하라는 명령(생략가능)</li>
+        <li>scrren : 컴퓨터 스크린에서 사용할 css를 정의</li>
+        <li>(조건문):해당 크기를 설정할 수 있음</li>
+        <li>{실행문}:조건에 따른 실행을 설정</li>
+    </ul>
+</body>
+
+</html>

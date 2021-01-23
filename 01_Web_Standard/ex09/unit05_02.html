@@ -1,24 +1,140 @@
 <!DOCTYPE HTML>
 <html lang="ko">
-	<head>
-		<title>주문 폼 만들기</title>
-		<meta charset="UTF-8">
-		<style type="text/css">
-			
-		</style>
-	</head>
 
-	<body>
-		<div id="wrapper">
-			<form id="orderForm">
-				<h1><span>주문자 정보 입력</span></h1>
-				<p>
-					<label for="userId">이름</label>
-					<input type="text" id="userId" />
-				</p>
-				<p>
-					<label>휴대폰</label>
-					<span class="cellStyle">
+<head>
+    <title>주문 폼 만들기</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin-top: 50px;
+            font-size: 13px;
+            font-family: "맑은 고딕", "돋움";
+        }
+        
+        #wrapper {
+            width: 500px;
+            padding: 15px;
+            border: 5px solid #ff3399;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        
+        #wrapper #orderForm {
+            display: table;
+            margin: 10px auto;
+            border-collapse: collapse;
+        }
+        
+        #wrapper #orderForm h1 {
+            display: table-caption;
+            font-size: 15px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+        #wrapper #orderForm h1 span {
+            display: block;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 5px;
+        }
+        
+        #wrapper #orderForm p {
+            display: table-row;
+            border-bottom: 1px solid #d5d5d5;
+        }
+        
+        #wrapper #orderForm p label {
+            display: table-cell;
+            padding-left: 40px;
+        }
+        
+        #wrapper #orderForm p>input {
+            display: table-cell;
+        }
+        
+        #wrapper #orderForm p .cellStyle {
+            display: table-cell;
+            padding: 5px;
+        }
+        
+        #orderForm input[type="text"],
+        #orderForm select {
+            border: 1px solid #339933;
+            background: #efefef;
+            width: 60px;
+            padding: 3px;
+            margin: 5px;
+        }
+        
+        #orderForm #userId {
+            width: 80px;
+            margin-left: 10px;
+        }
+        
+        #userEmail1,
+        #userEmail2 {
+            width: 100px;
+        }
+        
+        #orderForm input[type="button"] {
+            background: #fff;
+            border: 2px solid #f39;
+            border-radius: 20px;
+            padding: 3px 10px;
+        }
+        
+        #userAdd1 {
+            width: 100%;
+        }
+        
+        #orderForm #userAdd2,
+        #orderForm #userAdd3 {
+            display: block;
+            width: 220px;
+        }
+        
+        #userPhone1,
+        #userPhone2,
+        #userPhone3 {}
+        
+        #wrapper #orderForm .btnRow {
+            display: block;
+            border-style: none;
+            position: relative;
+            left: 120px;
+            top: 5px
+        }
+        
+        #wrapper #orderForm .btnRow>input {
+            display: inline-block;
+            color: white;
+            border-style: none;
+            border-radius: 20px;
+            width: 150px;
+            height: 40px;
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <form id="orderForm">
+            <h1><span>주문자 정보 입력</span></h1>
+            <p>
+                <label for="userId">이름</label>
+                <input type="text" id="userId" />
+            </p>
+            <p>
+                <label>휴대폰</label>
+                <span class="cellStyle">
 						<select id="userPhone1">
 							<option value="010">010</option>
 							<option value="010">011</option>
@@ -31,28 +147,29 @@
 						-
 						<input type="text" id="userPhone3" />
 					</span>
-				</p>
-				<p>
-					<label for="userEmail1">이메일</label>
-					<span class="cellStyle">
+            </p>
+            <p>
+                <label for="userEmail1">이메일</label>
+                <span class="cellStyle">
 						<input type="text" id="userEmail1" />
 						@
 						<input type="text" id="userEmail2" />
 					</span>
-				</p>
-				<p>
-					<label>배송 주소</label>
-					<span class="cellStyle">
+            </p>
+            <p>
+                <label>배송 주소</label>
+                <span class="cellStyle">
 						<input type="text" id="userAdd1" />
 						<input type="button" id="userAddBtn" value="우편번호 찾기" />
 						<input type="text" id="userAdd2" />
 						<input type="text" id="userAdd3" />
 					</span>
-				</p>
-				<p class="btnRow">
-					<input type="submit" id="btnSubmit" value="제품 주문 신청 완료 " />
-				</p>
-			</form>
-		</div>
-	</body>
+            </p>
+            <p class="btnRow">
+                <input type="submit" id="btnSubmit" value="제품 주문 신청 완료 " />
+            </p>
+        </form>
+    </div>
+</body>
+
 </html>
