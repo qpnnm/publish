@@ -1,0 +1,40 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    color: #404040;
+    font: 13px "맑은 고딕", "Dotum", Arial;
+    background: url(../menu1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    float: left;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: lightcoral;
+    display: block;
+    padding: 10px 10px 15px 10px;
+    background: lightgreen;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+#nav ul li:hover a {
+    padding-bottom: 10px;
+    border-bottom: 5px solid #f90;
+    ;
+}

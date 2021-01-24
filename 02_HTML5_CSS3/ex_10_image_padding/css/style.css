@@ -1,0 +1,40 @@
+@charset "utf-8";
+* {}
+
+body {}
+
+.header {
+    width: 700px;
+    height: 400px;
+    background: aquamarine;
+    margin: 50px auto;
+    position: relative;
+}
+
+#box1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    top: 0;
+    left: 0;
+}
+
+#box2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: brown;
+}
+
+#box2 #box2_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: red;
+}
