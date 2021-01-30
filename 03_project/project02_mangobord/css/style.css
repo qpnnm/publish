@@ -1,0 +1,118 @@
+@charset "utf-8";
+body {
+    font-family: 'Nnum gothic', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: inherit;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#wrap {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background: rosybrown;
+}
+
+.row {}
+
+h1 {
+    float: left;
+    padding-top: 27px;
+    width: 193px;
+    height: 25px;
+}
+
+#nav {
+    float: left;
+    margin-left: 98px;
+}
+
+#nav ul {}
+
+#nav ul li {
+    float: left;
+    margin-right: 22px;
+}
+
+#nav ul li:last-child {
+    margin-right: 0;
+}
+
+#nav ul li.on a {
+    color: fecb29;
+}
+
+#nav ul li:hover a {
+    color: royalblue
+}
+
+#nav ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    padding: 4px 0;
+    color: #333;
+}
+
+.gnb {
+    float: right;
+}
+
+.gnb>ul {}
+
+.gnb>ul>li {}
+
+.gnb>ul>li>a {}
+
+.gnb>ul>.sns {}
+
+.gnb>ul>.sns>li {}
+
+.gnb>ul>.sns>li img {}
+
+
+/* mobile */
+
+.mobile {
+    display: none
+}
+
+.mobile>ul {}
+
+.mobile>ul>li {}
+
+.mobile>ul>li:nth-child(1) {}
+
+.appBtn {}
+
+.appBtn>.bar {}
+
+.appBtn>.bar1 {}
+
+.appBtn>.bar2 {}
+
+.appBtn>.bar3 {}
+
+.mobile_nav {}
+
+.mobile_nav li {}
+
+.mobile_nav li a {}
+
+.mobile>ul>li:nth-child(2) {}
+
+.mobile>ul>li:nth-child(2) a {}
+
+.mobile>ul>li:nth-child(2) a img {}
+
+.mobile>ul>li:nth-child(3) {}
+
+.mobile>ul>li:nth-child(3) a {}

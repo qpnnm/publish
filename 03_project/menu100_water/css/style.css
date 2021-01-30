@@ -78,6 +78,11 @@ a {
     right: 0;
     z-index: 10;
     position: relative;
+    overflow: hidden;
+}
+
+#nav:hover .bg_menu {
+    height: 300px;
 }
 
 #nav .bg_menu>ul {
@@ -122,11 +127,32 @@ a {
 
 #nav .bg_menu>ul>li:hover>ul.twoD {
     display: block;
+    padding-top: 10px;
+    top: 105px;
+    position: absolute;
+    box-sizing: border-box;
+    padding-top: 0px;
 }
 
-#nav .bg_menu>ul>li>ul.twoD li {}
+#nav .bg_menu>ul>li>ul.twoD li {
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    clear: both;
+    height: auto;
+    text-align: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
-#nav .bg_menu>ul>li>ul.twoD li a {}
+#nav .bg_menu>ul>li:hover>ul {
+    background: rgba(0, 86, 155, 0.5);
+}
+
+#nav .bg_menu>ul>li>ul.twoD li a {
+    color: white;
+    text-decoration: none;
+}
 
 #content {
     width: 100%;
