@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+    function GetLotto() {
+        // 6개의 로또 번호를 저장할 배열
+        var lotto = new Array(6);
+        // 추첨된 로또번호의 갯수
+        var count = 0;
+        // 번호중복 방지용 변수
+        var mFlag = true;
+        // 6개의 로또번호를 얻을때까지 반복
+        while (count < 6) {
+            var number;
+            // 랜덤번호 추출
+            number = parseInt(Math.random() * 45) + 1
+                // 중복확인
+            for (var i = 0; i < count; i++)
+                if (lotto[i] == number) mFlag = false;
+                // 중복된 번호가 아니면 로또 번호배열에 추가
+            if (mFlag) {
+                lotto[count] = number;
+                count++;
+            }
+            mFlag = true;
+
+            lotto.sort(function(a, b) {
+                return a - b;
+            })
+        }
+
+        // 추첨된 로또번호 출력
+        alert(lotto[0] + ', ' + lotto[1] + ', ' + lotto[2] + ', ' + lotto[3] + ', ' + lotto[4] + ', ' + lotto[5]);
+    }
+
+
+    window.onload(GetLotto());
+</script>
+
+
+</html>

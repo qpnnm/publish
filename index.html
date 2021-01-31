@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>일기장</title>
-    <style type="text/css">
-        body {
-            background-color: #0095b3;
-        }
-
-        ul {
-            width: 1000px;
-            background-color: #fff;
-            margin: 50px auto;
-            padding: 50px;
-        }
-
-        a {
-            color: #222;
-            text-decoration: none;
-            padding: 5px 0;
-            display: block;
-            background-color: royalblue;
-        }
-    </style>
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <ul>
-        <li><a href="01_Web_Standard/basic/href/photo1/index.html">경로 ./ 현재위치 .. 한칸위</a></li>
-        <li><a href="01_Web_Standard/ex02/unit01_01.html">문서셋팅</a></li>
-        <li><a href="01_Web_Standard/ex02/unit01_02.html" target="_blank">인라인요소~</a></li>
-        <li><a href="01_Web_Standard/ex02/unit02_01.html" target="_blank">제목 서식과 문단 편집에 관련된 요소~</a></li>
-        <li><a href="01_Web_Standard/ex02/unit02_02.html" target="_blank">Entity 코드를 이용한 공백 문자 및 특수 문자 삽입~</a></li>
-        <li><a href="01_Web_Standard/ex02/unit03_01.html" target="_blank">텍스트 관련 요소의 사용~</a></li>
-        <li><a href="01_Web_Standard/ex02/unit03_02.html" target="_blank"> HTML5에 새로 추가된 텍스트 관련 요소의 사용</a></li>
-        <li><a href="01_Web_Standard/ex02/unit04_01.html" target="_blank">목록 문단 입력하기</a></li>
-        <li><a href="01_Web_Standard/ex02/unit05_01.html" target="_blank">시맨틱 요소를 이용한 마크업1 </a></li>
-        <li><a href="01_Web_Standard/ex02/unit05_02.html" target="_blank">시맨틱 요소를 이용한 마크업2</a></li>
-        <li><a href="01_Web_Standard/ex02/unit05_03.html" target="_blank">시맨틱 요소를 이용한 마크업3</a></li>
-    </ul>
+
+    <form action="/main.html" method="POST">
+        <h1>Member Login</h1>
+        <fieldset>
+
+            <legend>Member Login</legend>
+
+            <div id="login">
+
+                <p><label for="userId" class="labelStyle">아이디</label>
+                    <input type="text" id="userId">
+                </p>
+                <p><label for="userPwd" class="labelStyle">비밀번호 </label>
+                    <input type="password" id="userPwd">
+                </p>
+
+            </div>
+            <input type="submit" value="로그인" id="btnLogin">
+            <p id="btn1">
+                <input type="checkbox" id="saveId" value="savedIdYes">
+                <label for="saveId">아이디저장</label>
+                <input type="checkbox" id="secure" value="secureYes">
+                <label for="secure">보안접속</label>
+
+            </p>
+            <p id="btn2">
+
+                <input type="button" value="회원가입" id="btnJoin">
+                <input type="button" value="아이디/비밀번호 찾기" id="btnFind">
+
+            </p>
+
+
+
+        </fieldset>
+
+
+    </form>
+
+
 </body>
 
 </html>

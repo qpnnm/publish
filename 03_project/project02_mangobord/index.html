@@ -1,109 +1,102 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!DOCTYPE HTML>
+<html lang='ko'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>망고보드</title>
-    <!--메타-->
-    <meta name='Title' content="mangoboard">
-    <meta name='Subject' content="mangoboard mainpage">
-    <meta name='Keywords' content="mangoboard,망고보드,디자인,디자인포트폴리오">
-    <meta name='Author' content="bik">
-    <meta name='Description' content="망고보드 반응형 만들기에 오신것을 환영합니다">
-    <meta name='Author-Date' content="2021-01-30">
-    <meta name='Copyright' content="mangoboard">
-    <meta name='robots' content="index,follow">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--폰트 어썸-->
+    <title> </title>
+    <meta charset='utf-8'>
+    <meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+    <meta name='Title' content='mangobord'>
+    <meta name='Subject' content='mangobord mainpage'>
+    <meta name='Keywords' content='mangobord, 망고보드, 디자인, 디자인포트폴리오'>
+    <meta name='Author' content='hyunroom'>
+    <meta name='Description' content='망고보드 반응형 만들기에 오신것을 환영합니다.'>
+    <meta name='Author-Date' content='20210130'>
+    <meta name='Robots' content='index,follow'>
+
+
+    <link rel='stylesheet' href='css/reset.css'>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <link rel='stylesheet' href='css/style.css'>
+
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <!--웹폰트 -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!--웹폰트-->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <!--오픈그래프(문자 톡 트위트 등 주소 기반으로 넣기만 하면 대표하는 타이틀이 나오는 타입웹사이트 url등등을 지정 설명)-->
-    <meta property="og:title" content="mangoboard" />
+
+    <!--open graph 문자 톡 트위트 등 주소 기반으로 넣기만 하면 대표하는 타이틀이 나오는 타입웹사이트 url 등등을 지정 설명-->
+    <meta property="og:title" content="mangobord" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://www.cjh7652.dothome.co.kr" />
+    <meta property="og:image" content="https://www.cjh7652.dothome.co.kr/images/mango.jpg" />
+
     <!--파비콘-->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/9961be980b7879f60624481b816fff0c.ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/fav/9961be980b7879f60624481b816fff0c.ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/9961be980b7879f60624481b816fff0c.ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/fav/9961be980b7879f60624481b816fff0c.ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/9961be980b7879f60624481b816fff0c.ico/favicon-16x16.png">
-    <link rel="manifest" href="images/fav/9961be980b7879f60624481b816fff0c.ico/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!--스크립트-->
-    <script src="js/jquery.min_1.12.4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/modernizr-custom.js"></script>
-    <script src="js/ie-checker.js"></script>
-    <script src="js/movie.js"></script>
-    <script src="js/iframe_api.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
 
 
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src='js/script.js' defer></script>
+
+    <!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+		<![endif]-->
+
+    <!--[if (lte IE 8)]>
+			<script src='js/lib/html5shiv.min.js'></script>
+			<link rel='stylesheet' href='#'>
+			<![endif]-->
+
+    <!--[if (lte IE 7)]>
+		<link rel='stylesheet' href='#'>
+	<![endif]-->
 
 </head>
 
 <body>
-
     <ul id="skip">
-
-        <li id="">
-            <a href="#header">헤더 바로가기</a>
-        </li>
-        <li id="">
-            <a href="#nav">메뉴 바로가기</a>
-        </li>
-        <li id="">
-            <a href="#content">내용 바로가기</a>
-        </li>
-        <li id="">
-            <a href="#footer">하단 바로가기</a>
-        </li>
-
-
+        <li><a href="#header">헤더 바로가기</a></li>
+        <li><a href="#nav">메뉴 바로가기</a></li>
+        <li><a href="#content">내용 바로가기</a></li>
+        <li><a href="#footer">하단 바로가기</a></li>
     </ul>
-
     <div id="wrap">
-
         <header id="header">
             <div class="container">
-                <div class="row">
+                <div class="row cf">
                     <h1>
-                        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
                     </h1>
-
                     <nav id="nav">
-                        <ul>
-
-                            <li class="o">
-                                <a href="#">탬플릿</a>
-                            </li>
-                            <li>
-                                <a href="#">사용자가이드</a>
-                            </li>
-                            <li>
-                                <a href="#">사용자갤러리</a>
-                            </li>
-                            <li>
-                                <a href="#">요금제/저작권</a>
-                            </li>
+                        <ul class="cf">
+                            <li class="on"><a href="#">템플릿</a></li>
+                            <li><a href="#">사용자가이드</a></li>
+                            <li><a href="#">사용자갤러리</a></li>
+                            <li><a href="#">요금제/저작권</a></li>
                         </ul>
-
                     </nav>
                     <div class="gnb">
                         <ul>
@@ -114,65 +107,222 @@
                         </ul>
                         <ul class="sns">
                             <li>
-                                <a href="#"><img src="images/facebook_ico.png" alt=""></a>
+                                <a href="#"><img src="images/blog_ico.png" alt="blog_ico" /></a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/blog_ico.png" alt=""></a>
+                                <a href="#"><img src="images/facebook_ico.png" alt="facebook_ico" /></a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/youtube_ico.png" alt=""></a>
+                                <a href="#"><img src="images/youtube_ico.png" alt="youtube_ico" /></a>
                             </li>
                         </ul>
-
-
-
-
                     </div>
-
-                    <div class="mobile">
-
-                        <ul>
-                            <li>
-                                <a href="#" class="appBtn"> <i class="bar bar1"></i><i class="bar bar2"></i><i class="bar bar3"></i>
-
-                                </a>
-                                <ul class="mobile_nav">
-                                    <li class="on">
-                                        <a href="#">탬플릿</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">사용자가이드</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">사용자갤러리</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">요금제/저작권</a>
-                                    </li>
-                                </ul>
-                                ul
-
-                            </li>
-                        </ul>
-
-
-
-                    </div>
-
-
+                </div>
+                <div class="mobile">
+                    <ul>
+                        <li>
+                            <a href="#" class="appBtn">
+                                <i class="bar bar1"></i>
+                                <i class="bar bar2"></i>
+                                <i class="bar bar3"></i>
+                            </a>
+                            <ul class="mobile_nav">
+                                <li class="on"><a href="#">템플릿</a></li>
+                                <li><a href="#">사용자가이드</a></li>
+                                <li><a href="#">사용자갤러리</a></li>
+                                <li><a href="#">요금제/저작권</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-find-btn"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </header>
+        <main id="main">
+            <div class="main_top">
+                <div class="container cf">
+                    <div class="main_top_left">
+                        <h2>쉬운 디자인 플랫폼, 망고보드 <span class="textIcon"><img src="images/try_btn.png" alt="btn"/></span></h2>
+                        <p class="textBold">누구나 <span class="colorY">디자이너</span>가 된다.</p>
+                    </div>
+                    <div class="main_top_right">
+                        <h3>News</h3>
+                        <div class="news_wrap">
+                            <p>
+                                <span class="text">카드뉴스, sns콘텐츠 이렇게 만들어 보세요</span>
+                                <span class="data">2021-01-30</span>
+                            </p>
+                            <p>
+                                <span class="text">카드뉴스, sns콘텐츠 이렇게 만들어 보세요</span>
+                                <span class="data">2021-01-30</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_bottom">
+                <div class="container">
+                    <div class="playBtn"><img src="images/mango_playicon.png" alt="playBtn" /></div>
+                </div>
+            </div>
+        </main>
+        <section id="template">
+            <div class="container">
+                <h2>막막한 디자인? 템플릿이 도와 드립니다.</h2>
+                <p>온라인, 모바일, 인쇄용까지 다양한 템플릿을 활용하면 <br/> 누구나 고퀄리티로 척척, 디자인이 즐거워집니다.</p>
+                <div class="template_line">
+                    <ul class="cf">
+                        <li>
+                            <a href="#">인포그래픽</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">네임카드</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">카드뉴스</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">현수막</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">상세페이지</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">세로배너</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">sns</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">이벤트 · 홍보페이지</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">프레젠테이션</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">유튜브채널아트</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">배너</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">웹툰스타일</a>
+                            <div class="template_text">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">포스트 · 전단</a>
+                            <div class="template_text template_text1">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">로고 <span class="ellipse">N</span></a>
+                            <div class="template_text template_text2">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                        <li>
+                            <a href="#">유튜브썸네일</a>
+                            <div class="template_text template_text3">학습자료, 이력서, 타임라인, 대시보드, 캐페인 등</div>
+                        </li>
+                    </ul>
+                    <ul class="btn">
+                        <li class="on"><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                        <li><span class="so">버튼</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="banner">
+
+            <h2 class="so">배너영역</h2>
+            <div class="container">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img01.jpg" alt="imageInfo1"></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img02.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img03.jpg" alt="imageInfo3"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img04.jpg" alt="imageInfo4"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img05.jpg" alt="imageInfo5"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img06.jpg" alt="imageInfo6"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img07.jpg" alt="imageInfo7"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img08.jpg" alt="imageInfo8"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img09.jpg" alt="imageInfo9"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/templt_info_img10.jpg" alt="imageInfo10"></a>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </section>
+        <section id="title_box">
+
+            <h2 class="section_title">좋은 디자인 맛을 내는 풍부한 재료들까지</h2>
+            <p class="section_p">망고보드의 디자인 툴로 망고보드의 다양한 재료들을 조리하면 <br> 어떤 맛의 디자인도 완성할 수 있습니다.
+            </p>
 
 
 
+        </section>
+        <section id="bxslider">
+            <div class="container">
+                <div class="bxslider">
+                    <div><img src="images/main_img01.png" alt=""></div>
+                    <div><img src="images/main_img02.png" alt=""></div>
+                    <div><img src="images/main_img03.png" alt=""></div>
+                </div>
 
 
-
+            </div>
+        </section>
+        </div>
     </div>
-
-
 </body>
 
 </html>
